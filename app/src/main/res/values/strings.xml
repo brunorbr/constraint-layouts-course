@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Strip Trips</string>
+    <string name="home_page_banner">Home page banner</string>
+    <string name="especiais">Especiais</string>
+    <string name="brasil">Brasil</string>
+    <string name="header_title">Header title</string>
+    <string name="country_name">Country name</string>
 </resources>
