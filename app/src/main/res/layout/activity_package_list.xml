@@ -7,7 +7,7 @@
     tools:context=".ui.activity.PackageListActivity">
 
     <ImageView
-        android:id="@+id/headerBanner"
+        android:id="@+id/listview_header_banner"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,7 +17,7 @@
         tools:srcCompat="@color/purple_500" />
 
     <TextView
-        android:id="@+id/titleView"
+        android:id="@+id/listview_header_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -33,23 +33,23 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/countryView"
+        android:id="@+id/listview_header_country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Brasil"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/titleView"
-        app:layout_constraintTop_toBottomOf="@+id/titleView" />
+        app:layout_constraintStart_toStartOf="@+id/listview_header_title"
+        app:layout_constraintTop_toBottomOf="@+id/listview_header_title" />
 
     <ListView
-        android:id="@+id/packageList"
+        android:id="@+id/listview_package_list"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerBanner"
+        app:layout_constraintTop_toBottomOf="@id/listview_header_banner"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/package_item"
         />
